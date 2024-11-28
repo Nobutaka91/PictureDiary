@@ -65,3 +65,5 @@ group :test do
   gem "capybara"
   gem "selenium-webdriver"
 end
+
+gem "carrierwave", " ~> 2.2.3" # gemで、画像ファイルをアップロードする機能 
