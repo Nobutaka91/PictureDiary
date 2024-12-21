@@ -1,22 +1,16 @@
-<div id="<%= dom_id idea %>">
-  <p>
-    <strong>Title:</strong>
-    <%= idea.title %>
-  </p>
-
-  <p>
-    <strong>Description:</strong>
-    <%= idea.description %>
-  </p>
-
-  <p>
-    <strong>Picture:</strong>
-    <%= image_tag(idea.picture_url, width: '600px') if idea.picture.present? %>
-  </p>
-
-  <p>
-    <strong>Published at:</strong>
-    <%= idea.published_at %>
-  </p>
-
+<div id="<%= dom_id idea %>" class="row">
+  <div class="col-md-6 my-3">
+    <%= image_tag(idea.picture_url, width: '100px') if idea.picture.present? %>
+  </div>
+  <div class="col-md-6 my-3">
+    <h1>
+      <%= idea.title %>
+    </h1>
+    <time class="badge rounded-pill bg-info text-dark">
+      <%= idea.published_at %>
+    </time>
+    <p class="my-4">
+      <%= idea.description %>
+    </p>
+  </div>
 </div>
