@@ -66,4 +66,5 @@ group :test do
   gem "selenium-webdriver"
 end
 
-gem "carrierwave", " ~> 2.2.3" # gemで、画像ファイルをアップロードする機能 
+gem "carrierwave", " ~> 2.2.3" # gemで、画像ファイルをアップロードする機能
+gem "mini_magick", " ~> 4.11.0" # サムネイルを作るための機能
